@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+
+<project name="seleniumjunit" basedir=".">
+
+<junit printsummary="yes" haltonfailure="yes">
+  <classpath>
+    <pathelement location="."/>
+    <pathelement path="classes"/>
+    <pathelement path="${SELENIUM_HOME}/junit-4.11.jar"/>
+    <pathelement path="${SELENIUM_HOME}/selenium-2.39.0/selenium-java-2.39.0.jar"/>
+    <pathelement path="${SELENIUM_HOME}/selenium-server-standalone-2.39.0.jar"/>
+  </classpath>
+
+  <formatter type="xml"/>
+
+  <test name="com.example.tests.Testsuite" haltonfailure="no" outfile="result">
+    <formatter type="xml"/>
+  </test>
+</junit>
+
+</project>
+
+
